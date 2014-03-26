@@ -1,17 +1,25 @@
 var imgWidth = 1507;
 var imgHeight = 943;
 
-var stage = new Kinetic.Stage({
+var mapStage = new Kinetic.Stage({
 	container: 'container'
 	, width: 600
 	, height: 400
 });
 
-var scale = stage.width() / imgWidth;
+var legendStage = new Kinetic.Stage({
+	container: 'legend'
+	, width: 600
+	, height: 150
+});
+
+var scale = mapStage.width() / imgWidth;
 
 var mapLayer = new Kinetic.Layer();
 var shapeLayer = new Kinetic.Layer();
 var messageLayer = new Kinetic.Layer();
+var legendLayer = new Kinetic.Layer();
+
 var txtheader = new Kinetic.Text({
 	x: 20 * scale
 	, y: (imgHeight - 200) * scale
@@ -34,27 +42,26 @@ function writeMessage(header, message) {
 	txtmessage.setText(message);
 	messageLayer.draw();
 }
-
-var legend = {
-	blocks: {
-		"A" : {
-			highlight: "red"
-			, normal: "orange"
-		}
-		, "B" : {
-			highlight: "red"
-			, normal: "gold"
-		}
-		, "C" : {
-			highlight: "red"
-			, normal: "blue"
-		}
-		, "D" : {
-			highlight: "red"
-			, normal: "green"
-		}
+function resetShapesLayer() {
+	var shapes = shapeLayer.getChildren();
+					
+	for(var i = 0; i < shapes.length; i++) {
+		var shape = shapes[i];
+		shape.fill(legendColor.blocks[shape["type"]].normal);
+		
 	}
-};
+	shapeLayer.draw();
+}
+
+var legendTexts;
+$.getJSON('legendText.json').done(function(data) {
+	legendTexts = data;
+});
+
+var legendColor;
+$.getJSON('legendColor.json').done(function(data) {
+	legendColor = data;
+});
 
 var blocks;
 $.getJSON('blocks.json').done(function(data) {
@@ -73,28 +80,67 @@ imageObj.onload = function() {
 				, width : block.width * scale
 				, height : block.height * scale
 				, rotation : block.rotate
-				, fill : legend.blocks[block.type].normal
+				, fill : legendColor.blocks[block.type].normal
 			});
+			
+			blockOverlay["type"] = block.type;
+			blockOverlay["subtype"] = block.subtype;
 			
 			blockOverlay.on('mouseover', function() {
 				writeMessage(key, 'test');
-				this.fill(legend.blocks[block.type].highlight);
+				this.fill(legendColor.blocks[block.type].highlight);
 				shapeLayer.draw();
 			});
 			blockOverlay.on('mouseout', function() {
 				writeMessage('', '');
-				this.fill(legend.blocks[block.type].normal);
-				shapeLayer.draw();
+				resetShapesLayer();
 			});
 			
 			shapeLayer.add(blockOverlay);				
 		}());
 	}
+	
+	var legendIdx = 0;
+	for(var pubKey in legendTexts) {(function() {
+			var key = pubKey;
+			var legendText = legendTexts[key];
+	
+			var legendLabel = new Kinetic.Label({
+				x : 0
+				, y : 0 + (legendIdx * 25)
+			});
+			legendLabel.add(new Kinetic.Text({
+				text: legendText.text
+				, fontFamily: 'Calibri'
+				, fontSize: 12
+				, fill: 'black'
+			}));
+			legendLabel.on('mouseover', function() {
+				var shapes = shapeLayer.getChildren();
+				
+				for(var i = 0; i < shapes.length; i++) {
+					var shape = shapes[i];
+					if(shape["type"] == legendText.match.value) {
+						shape.fill(legendColor.blocks[shape["type"]].highlight);
+						shapeLayer.draw();
+					}
+				}
+			});
+			legendLabel.on('mouseout', function() {
+				resetShapesLayer();
+			});
+			
+			legendLayer.add(legendLabel);
+			legendIdx++;
+		}());
+	}
+	
 	messageLayer.add(txtheader);
 	messageLayer.add(txtmessage);
-	stage.add(mapLayer);
-	stage.add(shapeLayer);
-	stage.add(messageLayer);
+	mapStage.add(mapLayer);
+	mapStage.add(shapeLayer);
+	mapStage.add(messageLayer);
+	legendStage.add(legendLayer);
 	
 	var mapContext = mapLayer.getContext();
 	mapContext.drawImage(imageObj, 0, 0, imgWidth * scale, imgHeight * scale);

@@ -1,0 +1,30 @@
+[
+	{
+		"text": "A-blokke"
+		, "match": {
+			"key": "block"
+			, "value": "A"
+		}
+	}
+	, {
+		"text": "B-blokke"
+		, "match": {
+			"key": "block"
+			, "value": "B"
+		}
+	}
+	, {
+		"text": "C-blokke"
+		, "match": {
+			"key": "block"
+			, "value": "C"
+		}
+	}
+	, {
+		"text": "D-blokke"
+		, "match": {
+			"key": "block"
+			, "value": "D"
+		}
+	}
+]

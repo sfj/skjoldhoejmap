@@ -1,0 +1,20 @@
+{
+	"blocks": {
+		"A" : {
+			"highlight": "red"
+			, "normal": "orange"
+		}
+		, "B" : {
+			"highlight": "red"
+			, "normal": "gold"
+		}
+		, "C" : {
+			"highlight": "red"
+			, "normal": "blue"
+		}
+		, "D" : {
+			"highlight": "red"
+			, "normal": "green"
+		}
+	}
+}
