@@ -47,7 +47,7 @@ function resetShapesLayer() {
 					
 	for(var i = 0; i < shapes.length; i++) {
 		var shape = shapes[i];
-		shape.fill(legendColor.blocks[shape["type"]].normal);
+		shape.fill(legendColor[shape["type"]][shape["subtype"]].normal);
 		
 	}
 	shapeLayer.draw();
@@ -80,15 +80,15 @@ imageObj.onload = function() {
 				, width : block.width * scale
 				, height : block.height * scale
 				, rotation : block.rotate
-				, fill : legendColor.blocks[block.type].normal
+				, fill : legendColor[block.type][block.subtype].normal
 			});
 			
 			blockOverlay["type"] = block.type;
 			blockOverlay["subtype"] = block.subtype;
 			
 			blockOverlay.on('mouseover', function() {
-				writeMessage(key, 'test');
-				this.fill(legendColor.blocks[block.type].highlight);
+				writeMessage(block.name, 'test');
+				this.fill(legendColor[block.type][block.subtype].highlight);
 				shapeLayer.draw();
 			});
 			blockOverlay.on('mouseout', function() {
@@ -120,8 +120,8 @@ imageObj.onload = function() {
 				
 				for(var i = 0; i < shapes.length; i++) {
 					var shape = shapes[i];
-					if(shape["type"] == legendText.match.value) {
-						shape.fill(legendColor.blocks[shape["type"]].highlight);
+					if(shape["type"] == legendText.match.key && shape["subtype"] == legendText.match.value) {
+						shape.fill(legendColor[shape["type"]][shape["subtype"]].highlight);
 						shapeLayer.draw();
 					}
 				}

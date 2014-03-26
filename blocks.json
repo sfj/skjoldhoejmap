@@ -1,218 +1,272 @@
-{
-	"Blok 20" : {
-		"type" : "A"
+[
+	{
+		"name" : "Blok 20"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 138 
 		, "y" : 91 
 		, "width" : 41 
 		, "height" : 121 
 		, "rotate" : "357"
 	}
-	, "Blok 22" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 22"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 166 
 		, "y" : 219 
 		, "width" : 41 
 		, "height" : 121 
 		, "rotate" : "357"
 	}
-	, "Blok 24" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 24"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 185 
 		, "y" : 346 
 		, "width" : 47 
 		, "height" : 243 
 		, "rotate" : "357"
 	}
-	, "Blok 21" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 21"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 220 
 		, "y" : 188 
 		, "width" : 44 
 		, "height" : 123 
 		, "rotate" : "357"
 	}
-	, "Blok 23" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 23"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 245 
 		, "y" : 313 
 		, "width" : 44 
 		, "height" : 183 
 		, "rotate" : "357"
 	}
-	, "Blok 19" : {
-		"type" : "B"
+	, {
+		"name" : "Blok 19"
+		, "type" : "block"
+		, "subtype" : "B"
 		, "x" : 196 
 		, "y" : 67 
 		, "width" : 182
 		, "height" : 48 
 		, "rotate" : "357"
 	}
-	, "Blok 18" : {
-		"type" : "B"
+	, {
+		"name" : "Blok 18"
+		, "type" : "block"
+		, "subtype" : "B"
 		, "x" : 382 
 		, "y" : 38 
 		, "width" : 181
 		, "height" : 48 
 		, "rotate" : "357"
 	}
-	, "Blok 17" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 17"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 579 
 		, "y" : 51 
 		, "width" : 44
 		, "height" : 182 
 		, "rotate" : "357"
 	}
-	, "Blok 16" : {
-		"type" : "C"
+	, {
+		"name" : "Blok 16"
+		, "type" : "block"
+		, "subtype" : "C"
 		, "x" : 525 
 		, "y" : 142 
 		, "width" : 44
 		, "height" : 124 
 		, "rotate" : "357"
 	}
-	, "Blok 14" : {
-		"type" : "C"
+	, {
+		"name" : "Blok 14"
+		, "type" : "block"
+		, "subtype" : "C"
 		, "x" : 552 
 		, "y" : 271
 		, "width" : 44
 		, "height" : 124 
 		, "rotate" : "357"
 	}
-	, "Blok 15" : {
-		"type" : "C"
+	, {
+		"name" : "Blok 15"
+		, "type" : "block"
+		, "subtype" : "C"
 		, "x" : 607 
 		, "y" : 238
 		, "width" : 44
 		, "height" : 124 
 		, "rotate" : "357"
 	}
-	, "Blok 12" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 12"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 830 
 		, "y" : 241
 		, "width" : 47
 		, "height" : 124 
 		, "rotate" : "357"
 	}
-	, "Blok 13" : {
-		"type" : "C"
+	, {
+		"name" : "Blok 13"
+		, "type" : "block"
+		, "subtype" : "C"
 		, "x" : 888 
 		, "y" : 196
 		, "width" : 43
 		, "height" : 185 
 		, "rotate" : "357"
 	}
-	, "Blok 11" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 11"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 804 
 		, "y" : 113
 		, "width" : 46
 		, "height" : 124 
 		, "rotate" : "357"
 	}
-	, "Blok 10" : {
-		"type" : "B"
+	, {
+		"name" : "Blok 10"
+		, "type" : "block"
+		, "subtype" : "B"
 		, "x" : 862 
 		, "y" : 90
 		, "width" : 183
 		, "height" : 47 
 		, "rotate" : "357"
 	}
-	, "Blok 9" : {
-		"type" : "B"
+	, {
+		"name" : "Blok 9"
+		, "type" : "block"
+		, "subtype" : "B"
 		, "x" : 1051 
 		, "y" : 100
 		, "width" : 183
 		, "height" : 47 
 		, "rotate" : "357"
 	}
-	, "Blok 7" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 7"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 1249 
 		, "y" : 111
 		, "width" : 43
 		, "height" : 181 
 		, "rotate" : "357"
 	}
-	, "Blok 8" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 8"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 1195 
 		, "y" : 204
 		, "width" : 44
 		, "height" : 123 
 		, "rotate" : "357"
 	}
-	, "Blok 5" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 5"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 1280
 		, "y" : 298
 		, "width" : 43
 		, "height" : 121 
 		, "rotate" : "357"
 	}
-	, "Blok 6" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 6"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 1220
 		, "y" : 331
 		, "width" : 43
 		, "height" : 121 
 		, "rotate" : "357"
 	}
-	, "Blok 4" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 4"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 1245
 		, "y" : 458
 		, "width" : 44
 		, "height" : 183 
 		, "rotate" : "357"
 	}
-	, "Blok 3" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 3"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 1305
 		, "y" : 428
 		, "width" : 43
 		, "height" : 239 
 		, "rotate" : "357"
 	}
-	, "Blok 2" : {
-		"type" : "B"
+	, {
+		"name" : "Blok 2"
+		, "type" : "block"
+		, "subtype" : "B"
 		, "x" : 1097
 		, "y" : 687
 		, "width" : 239
 		, "height" : 44
 		, "rotate" : "357"
 	}
-	, "Blok 1" : {
-		"type" : "A"
+	, {
+		"name" : "Blok 1"
+		, "type" : "block"
+		, "subtype" : "A"
 		, "x" : 841
 		, "y" : 678
 		, "width" : 239
 		, "height" : 43
 		, "rotate" : "357"
 	}
-	, "Blok 25" : {
-		"type" : "D"
+	, {
+		"name" : "Blok 25"
+		, "type" : "block"
+		, "subtype" : "D"
 		, "x" : 256
 		, "y" : 562
 		, "width" : 181
 		, "height" : 44
 		, "rotate" : "357"
 	}
-	, "Blok 26" : {
-		"type" : "D"
+	, {
+		"name" : "Blok 26"
+		, "type" : "block"
+		, "subtype" : "D"
 		, "x" : 448
 		, "y" : 575
 		, "width" : 181
 		, "height" : 44
 		, "rotate" : "357"
 	}
-	, "Blok 27" : {
-		"type" : "D"
+	, {
+		"name" : "Blok 27"
+		, "type" : "block"
+		, "subtype" : "D"
 		, "x" : 636
 		, "y" : 584
 		, "width" : 181
 		, "height" : 44
 		, "rotate" : "357"
 	}
-}
+]

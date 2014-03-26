@@ -1,5 +1,5 @@
 {
-	"blocks": {
+	"block": {
 		"A" : {
 			"highlight": "red"
 			, "normal": "orange"
