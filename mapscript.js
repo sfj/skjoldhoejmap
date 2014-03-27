@@ -59,17 +59,17 @@ function highlightShape(shape) {
 }
 
 var legendTexts;
-$.getJSON('legendText.json').done(function(data) {
+$.getJSON('data/legendText.json').done(function(data) {
 	legendTexts = data;
 });
 
 var legendColor;
-$.getJSON('legendColor.json').done(function(data) {
+$.getJSON('data/legendColor.json').done(function(data) {
 	legendColor = data;
 });
 
 var blocks;
-$.getJSON('blocks.json').done(function(data) {
+$.getJSON('data/blocks.json').done(function(data) {
 	blocks = data;
 });
 
