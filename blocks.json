@@ -269,4 +269,84 @@
 		, "height" : 44
 		, "rotate" : "357"
 	}
+	, {
+		"name" : "Centerbygningen"
+		, "type" : "common"
+		, "subtype" : "center"
+		, "x" : 888
+		, "y" : 566
+		, "width" : 103
+		, "height" : 97
+		, "rotate" : "357"
+	}
+	, {
+		"name" : "Varmecentralen"
+		, "type" : "util"
+		, "subtype" : "caretaker"
+		, "x" : 1015
+		, "y" : 619
+		, "width" : 61
+		, "height" : 37
+		, "rotate" : "357"
+	}
+	, {
+		"name" : "Garage"
+		, "type" : "util"
+		, "subtype" : "garage"
+		, "x" : 1012
+		, "y" : 561
+		, "width" : 61
+		, "height" : 24
+		, "rotate" : "357"
+	}
+	, {
+		"name" : "Sorteringsrum"
+		, "type" : "util"
+		, "subtype" : "trash"
+		, "x" : 1261
+		, "y" : 895
+		, "width" : 61
+		, "height" : 20
+		, "rotate" : "13"
+	}
+	, {
+		"name" : "Musikrummet"
+		, "type" : "common"
+		, "subtype" : "music"
+		, "x" : 860
+		, "y" : 534
+		, "width" : 49
+		, "height" : 25
+		, "rotate" : "357"
+	}
+	, {
+		"name" : "Varmemesterbolig"
+		, "type" : "private"
+		, "subtype" : "caretaker"
+		, "x" : 944
+		, "y" : 528
+		, "width" : 57
+		, "height" : 28
+		, "rotate" : "357"
+	}
+	, {
+		"name" : "Vuggestue"
+		, "type" : "private"
+		, "subtype" : "toddler"
+		, "x" : 688
+		, "y" : 542
+		, "width" : 141
+		, "height" : 26
+		, "rotate" : "357"
+	}
+	, {
+		"name" : "Børnehave"
+		, "type" : "private"
+		, "subtype" : "kindergarden"
+		, "x" : 476
+		, "y" : 532
+		, "width" : 135
+		, "height" : 26
+		, "rotate" : "357"
+	}
 ]

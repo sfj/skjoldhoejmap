@@ -48,8 +48,13 @@ function resetShapesLayer() {
 	for(var i = 0; i < shapes.length; i++) {
 		var shape = shapes[i];
 		shape.fill(legendColor[shape["type"]][shape["subtype"]].normal);
-		
+		shape.anim.stop();		
 	}
+	shapeLayer.draw();
+}
+function highlightShape(shape) {
+	shape.fill(legendColor[shape.type][shape.subtype].highlight);
+	shape.anim.start();
 	shapeLayer.draw();
 }
 
@@ -75,21 +80,26 @@ imageObj.onload = function() {
 			var block = blocks[key];
 			
 			var blockOverlay = new Kinetic.Rect({
-				x: block.x * scale
-				, y : block.y * scale
+				x: (block.x + block.width / 2) * scale
+				, y : (block.y + block.height / 2) * scale
 				, width : block.width * scale
 				, height : block.height * scale
 				, rotation : block.rotate
+				, offset: {x: (block.width / 2) * scale, y: (block.height / 2) * scale}
 				, fill : legendColor[block.type][block.subtype].normal
 			});
 			
 			blockOverlay["type"] = block.type;
 			blockOverlay["subtype"] = block.subtype;
 			
+			blockOverlay["anim"] = new Kinetic.Animation(function(frame) {
+				var scale = Math.sin(Date.now() * 2 * Math.PI / 1500) + 0.1;
+				blockOverlay.scale({x: (scale < 1 ? 1 : scale), y: (scale < 1 ? 1 : scale)});
+			}, shapeLayer);
+			
 			blockOverlay.on('mouseover', function() {
 				writeMessage(block.name, 'test');
-				this.fill(legendColor[block.type][block.subtype].highlight);
-				shapeLayer.draw();
+				highlightShape(this);
 			});
 			blockOverlay.on('mouseout', function() {
 				writeMessage('', '');
@@ -106,8 +116,8 @@ imageObj.onload = function() {
 			var legendText = legendTexts[key];
 	
 			var legendLabel = new Kinetic.Label({
-				x : 0
-				, y : 0 + (legendIdx * 25)
+				x : 0 + (Math.floor(legendIdx / 6) * 120)
+				, y : 0 + ((legendIdx % 6) * 25)
 			});
 			legendLabel.add(new Kinetic.Text({
 				text: legendText.text
@@ -121,8 +131,7 @@ imageObj.onload = function() {
 				for(var i = 0; i < shapes.length; i++) {
 					var shape = shapes[i];
 					if(shape["type"] == legendText.match.key && shape["subtype"] == legendText.match.value) {
-						shape.fill(legendColor[shape["type"]][shape["subtype"]].highlight);
-						shapeLayer.draw();
+						highlightShape(shape);
 					}
 				}
 			});

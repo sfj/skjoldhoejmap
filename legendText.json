@@ -21,10 +21,38 @@
 		}
 	}
 	, {
+		"text": "Centerbygningen"
+		, "match": {
+			"key": "common"
+			, "value": "center"
+		}
+	}
+	, {
 		"text": "D-blokke"
 		, "match": {
 			"key": "block"
 			, "value": "D"
+		}
+	}
+	, {
+		"text": "Genbrugstation"
+		, "match": {
+			"key": "util"
+			, "value": "trash"
+		}
+	}
+	, {
+		"text": "Musikrum"
+		, "match": {
+			"key": "common"
+			, "value": "music"
+		}
+	}	
+	, {
+		"text": "Varmecentral"
+		, "match": {
+			"key": "util"
+			, "value": "caretaker"
 		}
 	}
 ]

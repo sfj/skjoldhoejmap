@@ -17,4 +17,42 @@
 			, "normal": "green"
 		}
 	}
+	, "common" : {
+		"center": {
+			"highlight": "red"
+			, "normal": "grey"
+		}
+		, "music": {
+			"highlight": "red"
+			, "normal": "grey"
+		}
+	}
+	, "util" : {
+		"caretaker": {
+			"highlight": "red"
+			, "normal": "black"
+		}
+		, "garage": {
+			"highlight": "red"
+			, "normal": "black"
+		}
+		, "trash" : {
+			"highlight": "red"
+			, "normal": "pink"
+		}
+	}
+	, "private" : {
+		"caretaker" : {
+			"highlight": "red"
+			, "normal": "cyan"
+		}
+		, "kindergarden" : {
+			"highlight": "red"
+			, "normal": "cyan"
+		}
+		, "toddler" : {
+			"highlight": "red"
+			, "normal": "cyan"
+		}
+	}
 }
