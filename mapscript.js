@@ -30,7 +30,7 @@ var txtheader = new Kinetic.Text({
 });
 var txtmessage = new Kinetic.Text({
 	x: 20 * scale
-	, y: (imgHeight - 100) * scale
+	, y: (imgHeight - 130) * scale
 	, fontFamily: 'calibri'
 	, fontSize: 18
 	, text: ''
@@ -99,7 +99,12 @@ imageObj.onload = function() {
 			}, shapeLayer);
 			
 			blockOverlay.on('mouseover', function() {
-				writeMessage(block.name, 'test');
+				var desc = '';
+				if(block.address.length > 0) {
+					desc += 'Spobjergvej ' + block.address + '\n';
+				}
+				desc += block.description;
+				writeMessage(block.name, desc);
 				highlightShape(this);
 			});
 			blockOverlay.on('mouseout', function() {
