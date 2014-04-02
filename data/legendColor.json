@@ -1,58 +1,58 @@
 {
 	"block": {
 		"A" : {
-			"highlight": "red"
-			, "normal": "orange"
+			"highlight": "ED8C1D"
+			, "normal": "F6C58E"
 		}
 		, "B" : {
-			"highlight": "red"
-			, "normal": "gold"
+			"highlight": "ED8C1D"
+			, "normal": "F6C58E"
 		}
 		, "C" : {
-			"highlight": "red"
-			, "normal": "blue"
+			"highlight": "ED8C1D"
+			, "normal": "F6C58E"
 		}
 		, "D" : {
-			"highlight": "red"
-			, "normal": "green"
+			"highlight": "ED8C1D"
+			, "normal": "F6C58E"
 		}
 	}
 	, "common" : {
 		"center": {
-			"highlight": "red"
-			, "normal": "grey"
+			"highlight": "ED8C1D"
+			, "normal": "559EF1"
 		}
 		, "music": {
-			"highlight": "red"
-			, "normal": "grey"
+			"highlight": "ED8C1D"
+			, "normal": "559EF1"
 		}
 	}
 	, "util" : {
 		"caretaker": {
-			"highlight": "red"
-			, "normal": "black"
+			"highlight": "ED8C1D"
+			, "normal": "F1A855"
 		}
 		, "garage": {
-			"highlight": "red"
-			, "normal": "black"
+			"highlight": "ED8C1D"
+			, "normal": "F1A855"
 		}
 		, "trash" : {
-			"highlight": "red"
-			, "normal": "pink"
+			"highlight": "ED8C1D"
+			, "normal": "ED231D"
 		}
 	}
 	, "private" : {
 		"caretaker" : {
-			"highlight": "red"
-			, "normal": "cyan"
+			"highlight": "ED8C1D"
+			, "normal": "1DE6ED"
 		}
 		, "kindergarden" : {
-			"highlight": "red"
-			, "normal": "cyan"
+			"highlight": "ED8C1D"
+			, "normal": "1DE6ED"
 		}
 		, "toddler" : {
-			"highlight": "red"
-			, "normal": "cyan"
+			"highlight": "ED8C1D"
+			, "normal": "1DE6ED"
 		}
 	}
 }

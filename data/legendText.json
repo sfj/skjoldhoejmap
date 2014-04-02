@@ -35,6 +35,13 @@
 		}]
 	}
 	, {
+		"text": "Bordtennis"
+		, "match": [{
+			"key": "block"
+			, "value": "Blok 3"
+		}]
+	}
+	, {
 		"text": "Brugsen"
 		, "match": [{
 			"key": "common"
