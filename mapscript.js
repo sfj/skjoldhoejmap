@@ -58,27 +58,25 @@ function highlightShape(shape) {
 	shape.anim.start();
 	shapeLayer.draw();
 }
-
 var legendTexts;
-$.getJSON('data/legendText.json').done(function(data) {
+$.getJSON($.relurl + 'data/legendText.json').done(function(data) {
 	legendTexts = data;
 });
 
 var legendColor;
-$.getJSON('data/legendColor.json').done(function(data) {
+$.getJSON($.relurl + 'data/legendColor.json').done(function(data) {
 	legendColor = data;
 });
 
 var blocks;
-$.getJSON('data/blocks.json').done(function(data) {
+$.getJSON($.relurl + 'data/blocks.json').done(function(data) {
 	blocks = data;
 });
 
 var imageObj = new Image();
 imageObj.onload = function() {
-	for(var pubKey in blocks) {(function() {
-			var key = pubKey;
-			var block = blocks[key];
+	for(var i = 0; i < blocks.length; i++) {(function() {
+			var block = blocks[i];
 			
 			var blockOverlay = new Kinetic.Rect({
 				x: (block.x + block.width / 2) * scale
@@ -118,9 +116,8 @@ imageObj.onload = function() {
 	}
 	
 	var legendIdx = 0;
-	for(var pubKey in legendTexts) {(function() {
-			var key = pubKey;
-			var legendText = legendTexts[key];
+	for(var l = 0; l < legendTexts.length; l++) {(function() {
+			var legendText = legendTexts[l];
 	
 			var legendLabel = new Kinetic.Label({
 				x : 0 + (Math.floor(legendIdx / 6) * 120)
@@ -170,4 +167,4 @@ imageObj.onload = function() {
 	var mapContext = mapLayer.getContext();
 	mapContext.drawImage(imageObj, 0, 0, imgWidth * scale, imgHeight * scale);
 };
-imageObj.src = 'mapbackground.png';
+imageObj.src = $.relurl + 'mapbackground.png';
