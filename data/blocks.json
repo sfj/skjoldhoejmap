@@ -33,7 +33,7 @@
 		, "height" : 243 
 		, "rotate" : "357"
 		, "address" : "103-109"
-		, "description" : "Aktivitetslokaler 107A og 109A"
+		, "description" : "107A: Skjoldborgens spillerum og 109A: værkstedsklubben."
 	}
 	, {
 		"name" : "Blok 21"
@@ -57,7 +57,7 @@
 		, "height" : 183 
 		, "rotate" : "357"
 		, "address" : "111-115"
-		, "description" : "Aktivitetslokale 115A og vaskeri"
+		, "description" : "115A: Fodboldklubbens klublokale og vaskeri"
 	}
 	, {
 		"name" : "Blok 19"
@@ -93,7 +93,7 @@
 		, "height" : 182 
 		, "rotate" : "357"
 		, "address" : "153-157"
-		, "description" : "Aktivitetslokale 155A og vaskeri"
+		, "description" : "155A: Skjoldungernes legerum og vaskeri"
 	}
 	, {
 		"name" : "Blok 16"
@@ -165,7 +165,7 @@
 		, "height" : 124 
 		, "rotate" : "357"
 		, "address" : "86-88"
-		, "description" : "Aktivitetslokale 88A og vaskeri"
+		, "description" : "88A: Skjoldsnappernes fotostudie og vaskeri"
 	}
 	, {
 		"name" : "Blok 10"
@@ -177,7 +177,7 @@
 		, "height" : 47 
 		, "rotate" : "357"
 		, "address" : "74-84"
-		, "description" : "Glemt vasketøj"
+		, "description" : "Under 84: Glemt vasketøj"
 	}
 	, {
 		"name" : "Blok 9"
@@ -189,7 +189,7 @@
 		, "height" : 47 
 		, "rotate" : "357"
 		, "address" : "62-72"
-		, "description" : "Glemt vasketøj"
+		, "description" : "Under 72: Glemt vasketøj"
 	}
 	, {
 		"name" : "Blok 7"
@@ -225,7 +225,7 @@
 		, "height" : 121 
 		, "rotate" : "357"
 		, "address" : "48-50"
-		, "description" : "Beboerrådgiveren 50A, aktivitetslokale 48A og vaskeri"
+		, "description" : "50A: Beboerrådgiveren, 48A: Fitness og vaskeri"
 	}
 	, {
 		"name" : "Blok 6"
@@ -261,7 +261,7 @@
 		, "height" : 239 
 		, "rotate" : "357"
 		, "address" : "30-36"
-		, "description" : "Aktivitetslokale 30A og vaskeri"
+		, "description" : "30A: Bryggerklubben, 34A: bordtennisrum og vaskeri"
 	}
 	, {
 		"name" : "Blok 2"
@@ -285,7 +285,7 @@
 		, "height" : 43
 		, "rotate" : "357"
 		, "address" : "6-14"
-		, "description" : "Beboerrådets lokale 6A og vaskeri. Barens kontor og lager."
+		, "description" : "6A: Beboerrådets lokale  og vaskeri. 8A: Barens kontor og lager."
 	}
 	, {
 		"name" : "Blok 25"
@@ -345,7 +345,7 @@
 		, "height" : 37
 		, "rotate" : "357"
 		, "address" : ""
-		, "description" : "Luftpumpe, parkering for trækvogne"
+		, "description" : "I gården: Luftpumpe, parkering for trækvogne"
 	}
 	, {
 		"name" : "Garage"
@@ -369,7 +369,7 @@
 		, "height" : 20
 		, "rotate" : "13"
 		, "address" : ""
-		, "description" : "Affald til genbrug / sortering"
+		, "description" : "Affald til genbrug / sortering."
 	}
 	, {
 		"name" : "Musikrummet"
