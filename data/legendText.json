@@ -1,58 +1,191 @@
 [
 	{
 		"text": "A-blokke"
-		, "match": {
+		, "match": [{
 			"key": "block"
 			, "value": "A"
-		}
+		}]
 	}
 	, {
 		"text": "B-blokke"
-		, "match": {
+		, "match": [{
 			"key": "block"
 			, "value": "B"
-		}
+		}]
+	}	
+	, {
+		"text": "Baren"
+		, "match": [{
+			"key": "common"
+			, "value": "center"
+		}]
+	}
+	, {
+		"text": "Beboerrådet"
+		, "match": [{
+			"key": "block"
+			, "value": "Blok 1"
+		}]
+	}
+	, {
+		"text": "Beboerrådgiveren"
+		, "match": [{
+			"key": "block"
+			, "value": "Blok 5"
+		}]
+	}
+	, {
+		"text": "Brugsen"
+		, "match": [{
+			"key": "common"
+			, "value": "center"
+		}]
+	}
+	, {
+		"text": "Bryggerum"
+		, "match": [{
+			"key": "block"
+			, "value": "Blok 3"
+		}]
 	}
 	, {
 		"text": "C-blokke"
-		, "match": {
+		, "match": [{
 			"key": "block"
 			, "value": "C"
-		}
+		}]
 	}
 	, {
 		"text": "Centerbygningen"
-		, "match": {
+		, "match": [{
 			"key": "common"
 			, "value": "center"
-		}
+		}]
 	}
 	, {
 		"text": "D-blokke"
-		, "match": {
+		, "match": [{
 			"key": "block"
 			, "value": "D"
-		}
+		}]
+	}
+	, {
+		"text": "Fitness"
+		, "match": [{
+			"key": "block"
+			, "value": "Blok 5"
+		}]
+	}
+	, {
+		"text": "Fodboldklublokale"
+		, "match": [{
+			"key": "block"
+			, "value": "Blok 23"
+		}]
+	}
+	, {
+		"text": "Fotostudie"
+		, "match": [{
+			"key": "block"
+			, "value": "Blok 11"
+		}]
 	}
 	, {
 		"text": "Genbrugstation"
-		, "match": {
+		, "match": [{
 			"key": "util"
 			, "value": "trash"
-		}
+		}]
+	}
+	, {
+		"text": "Legerum"
+		, "match": [{
+			"key": "block"
+			, "value": "Blok 17"
+		}]
+	}
+	, {
+		"text": "Luftpumpe"
+		, "match": [{
+			"key": "util"
+			, "value": "caretaker"
+		}]
 	}
 	, {
 		"text": "Musikrum"
-		, "match": {
+		, "match": [{
 			"key": "common"
 			, "value": "music"
-		}
-	}	
+		}]
+	}
+	, {
+		"text": "Møbeldepot"
+		, "match": [{
+			"key": "block"
+			, "value": "Blok 4"
+		}]
+	}
+	, {
+		"text": "Sauna"
+		, "match": [{
+			"key": "common"
+			, "value": "center"
+		}]
+	}
+	, {
+		"text": "Spillerum"
+		, "match": [{
+			"key": "block"
+			, "value": "Blok 24"
+		}]
+	}
 	, {
 		"text": "Varmecentral"
-		, "match": {
+		, "match": [{
 			"key": "util"
 			, "value": "caretaker"
-		}
+		}]
+	}
+	, {
+		"text": "Varmemester kontor"
+		, "match": [{
+			"key": "common"
+			, "value": "center"
+		}]
+	}
+	, {
+		"text": "Vaskerier"
+		, "match" : [ {
+				"key": "block"
+				, "value": "Blok 23"
+			}
+			, {
+				"key": "block"
+				, "value": "Blok 17"
+			}
+			, {
+				"key": "block"
+				, "value": "Blok 11"
+			}
+			, {
+				"key": "block"
+				, "value": "Blok 1"
+			}
+			, {
+				"key": "block"
+				, "value": "Blok 3"
+			}
+			, {
+				"key": "block"
+				, "value": "Blok 5"
+			}
+		]
+	}
+	, {
+		"text": "Værksted"
+		, "match": [{
+			"key": "block"
+			, "value": "Blok 24"
+		}]
 	}
 ]

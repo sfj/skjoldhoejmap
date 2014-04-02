@@ -92,6 +92,7 @@ imageObj.onload = function() {
 			
 			blockOverlay["type"] = block.type;
 			blockOverlay["subtype"] = block.subtype;
+			blockOverlay["name"] = block.name;
 			
 			blockOverlay["anim"] = new Kinetic.Animation(function(frame) {
 				var scale = Math.sin(Date.now() * 2 * Math.PI / 1500) + 0.1;
@@ -134,12 +135,21 @@ imageObj.onload = function() {
 			legendLabel.on('mouseover', function() {
 				var shapes = shapeLayer.getChildren();
 				
-				for(var i = 0; i < shapes.length; i++) {
-					var shape = shapes[i];
-					if(shape["type"] == legendText.match.key && shape["subtype"] == legendText.match.value) {
-						highlightShape(shape);
+				for(var i = 0; i < legendText.match.length; i++) {
+					var key = legendText.match[i].key;
+					var val = legendText.match[i].value;
+					
+					for(var j = 0; j < shapes.length; j++) {
+						var shape = shapes[j];
+						if(shape["type"] == key 
+							&& (shape["subtype"] == val)
+								|| (shape["name"] == val)
+							) {
+							highlightShape(shape);
+						}
 					}
 				}
+				
 			});
 			legendLabel.on('mouseout', function() {
 				resetShapesLayer();
