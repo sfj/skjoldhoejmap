@@ -47,14 +47,14 @@ function resetShapesLayer() {
 					
 	for(var i = 0; i < shapes.length; i++) {
 		var shape = shapes[i];
-		shape.fill(legendColor[shape["type"]][shape["subtype"]].normal);
+		shape.fill('#' + legendColor[shape["type"]][shape["subtype"]].normal);
 		shape.anim.stop();
 		shape.scale({x: 1, y: 1});
 	}
 	shapeLayer.draw();
 }
 function highlightShape(shape) {
-	shape.fill(legendColor[shape.type][shape.subtype].highlight);
+	shape.fill('#' + legendColor[shape.type][shape.subtype].highlight);
 	shape.anim.start();
 	shapeLayer.draw();
 }
